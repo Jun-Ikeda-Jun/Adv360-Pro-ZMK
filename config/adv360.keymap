@@ -81,12 +81,27 @@
 
         katakana {
             bindings = <&kp F7>;
-            key-positions = <48 49>;
+            key-positions = <30 29>;
         };
 
         eigo {
             bindings = <&kp F10>;
-            key-positions = <57 56>;
+            key-positions = <44 43>;
+        };
+
+        Ctrl+shift+down {
+            bindings = <&kp LC(LS(DOWN))>;
+            key-positions = <50 49>;
+        };
+
+        Ctrl+shift+right {
+            bindings = <&kp LS(LC(RIGHT))>;
+            key-positions = <64 63>;
+        };
+
+        Ctrl+down {
+            bindings = <&kp LC(DOWN)>;
+            key-positions = <48 47>;
         };
     };
 
