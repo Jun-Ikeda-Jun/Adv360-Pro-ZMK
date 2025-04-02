@@ -113,6 +113,11 @@
             bindings = <&Discord>;
             key-positions = <34 39>;
         };
+
+        nm {
+            bindings = <&nm_macro>;
+            key-positions = <54 55>;
+        };
     };
 
     macros {
@@ -126,6 +131,20 @@
 
             label = "DISCORD";
             wait-ms = <0>;
+        };
+
+        nm_macro: nm_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N &kp N>;
+            label = "NM_MACRO";
+        };
+
+        ka_macro: ka_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp K &kp A>;
+            label = "KA_MACRO";
         };
     };
 
