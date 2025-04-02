@@ -118,6 +118,11 @@
             bindings = <&nm_macro>;
             key-positions = <54 55>;
         };
+
+        ka {
+            bindings = <&ka_macro>;
+            key-positions = <42 29>;
+        };
     };
 
     macros {
@@ -145,6 +150,13 @@
             #binding-cells = <0>;
             bindings = <&kp K &kp A>;
             label = "KA_MACRO";
+        };
+
+        ki_macro: ki_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp K &kp I>;
+            label = "KI_MACRO";
         };
     };
 
