@@ -100,8 +100,32 @@
         };
 
         Ctrl+down {
-            bindings = <&kp LC(DOWN)>;
+            bindings = <&kp LC(UP)>;
             key-positions = <48 47>;
+        };
+
+        Ctrl+down {
+            bindings = <&kp LC(DOWN)>;
+            key-positions = <62 61>;
+        };
+
+        Discord {
+            bindings = <&Discord>;
+            key-positions = <34 39>;
+        };
+    };
+
+    macros {
+        Discord: Discord {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LG(NUMBER_4)>,
+                <&macro_wait_time 1000>,
+                <&kp LC(LS(M))>;
+
+            label = "DISCORD";
+            wait-ms = <0>;
         };
     };
 
