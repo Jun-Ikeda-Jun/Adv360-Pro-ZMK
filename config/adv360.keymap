@@ -99,7 +99,7 @@
             key-positions = <64 63>;
         };
 
-        Ctrl+down {
+        Ctrl+up {
             bindings = <&kp LC(UP)>;
             key-positions = <48 47>;
         };
@@ -122,6 +122,26 @@
         ka {
             bindings = <&ka_macro>;
             key-positions = <42 29>;
+        };
+
+        ki {
+            bindings = <&ki_macro>;
+            key-positions = <42 24>;
+        };
+
+        ku {
+            bindings = <&ku_macro>;
+            key-positions = <42 23>;
+        };
+
+        ke {
+            bindings = <&ke_macro>;
+            key-positions = <42 17>;
+        };
+
+        ko {
+            bindings = <&ko_macro>;
+            key-positions = <42 25>;
         };
     };
 
@@ -157,6 +177,27 @@
             #binding-cells = <0>;
             bindings = <&kp K &kp I>;
             label = "KI_MACRO";
+        };
+
+        ku_macro: ku_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp K &kp U>;
+            label = "KU_MACRO";
+        };
+
+        ke_macro: ke_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp K &kp E>;
+            label = "KE_MACRO";
+        };
+
+        ko_macro: ko_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp K &kp O>;
+            label = "KO_MACRO";
         };
     };
 
