@@ -143,6 +143,16 @@
             bindings = <&ko_macro>;
             key-positions = <42 25>;
         };
+
+        home {
+            bindings = <&kp HOME>;
+            key-positions = <48 49>;
+        };
+
+        end {
+            bindings = <&kp END>;
+            key-positions = <56 57>;
+        };
     };
 
     macros {
